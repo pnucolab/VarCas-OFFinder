@@ -72,10 +72,10 @@
 					> {result.task_id}
 				</TableBodyCell>
 				<TableBodyCell
-					>{#if result.success}{result.title}{/if}</TableBodyCell
+					></TableBodyCell
 				>
 				<TableBodyCell
-					>{#if result.success}{result.product}{/if}</TableBodyCell
+					></TableBodyCell
 				>
 				
 				<TableBodyCell>
