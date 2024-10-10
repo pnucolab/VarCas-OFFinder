@@ -1,0 +1,50 @@
+# 환경 변수 파일
+.env
+*.env
+
+# Python 관련
+__pycache__/
+*.py[cod]
+*.so
+
+# 가상 환경
+venv/
+env/
+ENV/
+
+# 로그 파일
+*.log
+
+# 데이터베이스
+*.db
+*.sqlite3
+
+# Redis 관련
+dump.rdb
+
+# Node.js 관련
+node_modules/
+
+# SvelteKit 빌드 결과물
+/frontend/build/
+
+# 기타 임시 파일
+*.tmp
+*.bak
+*.swp
+
+# 운영체제 관련 파일
+.DS_Store
+Thumbs.db
+
+# IDE 관련 파일
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Docker 관련
+.docker/
+
+# Caddy 관련
+Caddyfile.local

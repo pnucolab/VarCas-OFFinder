@@ -1,0 +1,40 @@
+services:
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+  backend:
+    depends_on:
+      - redis
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    command: bash runserver.sh
+    environment:
+      - CELERY_BROKER_URL=${CELERY_BROKER_URL}
+      - CELERY_RESULT_BACKEND=${CELERY_RESULT_BACKEND}
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            count: 2
+            capabilities: [gpu]
+    volumes:
+      - /bce/omics/references/cas-offinder:/app/genome
+  caddy:
+    image: caddy:latest
+    restart: unless-stopped
+    ports:
+      - "${SERVER_PORT:-3000}:80"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+  redis:
+    image: redis:alpine
+    restart: unless-stopped
+volumes:
+  caddy_data:
+  caddy_config:
