@@ -26,7 +26,9 @@ for identifying potential off-target sites based on not only considering a refer
  **Testing**
  - download the vcf file from https://s3.eu-central-1.amazonaws.com/platinum-genomes/2017-1.0/hg38/small_variants/NA12877/NA12877.vcf.gz or
    https://s3.eu-central-1.amazonaws.com/platinum-genomes/2017-1.0/hg38/small_variants/NA12878/NA12878.vcf.gz. for the human genome.
-   the system has a default value (Target Genome = Homo sapiens (GRCH38/hg38)-Human, PAM type = SpCas9 from streptococcus pyogenes: 5'-NGG-3 
-    and Mismatch = 0)
+   the system has a default value (Target Genome = Homo sapiens (GRCH38/hg38)-Human, PAM type = SpCas9 from streptococcus pyogenes: 5'-NGG-3, 
+    target sequnce = CAGCAACTCCAGGGGGCCGC and Mismatch = 0)
+- The default value can be used or enter your preference for each input.
+  
    
   
