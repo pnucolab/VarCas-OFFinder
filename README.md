@@ -1,9 +1,9 @@
 # Cas-vcf
-Maybe project name should be more fancy. This is repo for cas-offinder update to handle vcf file
+This is the repo for the Cas-OFFinder update to handle vcf file.
 
 **Introduction**
 
-Genome editing nucleases are capable of precisely cleaving the DNA at a specific target site within the genome. 
+Genome editing nucleases can precisely cleave the DNA at a specific target site within the genome. 
 The accuracy in identifying the exact target sequence plays a crucial role in determining the success of genetic manipulation. 
 CRISPR genome editing has demonstrated its potential to treat genetic diseases such as sickle cell anemia, cystic fibrosis, 
 and muscular dystrophy by targeting and correcting the genetic abnormalities responsible for these conditions. However, 
