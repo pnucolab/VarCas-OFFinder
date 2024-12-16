@@ -1,4 +1,4 @@
-# Cas-vcf
+# Allelic Cas-OFFinder
 This is the repo for the Cas-OFFinder update to handle vcf file.
 
 **Introduction**
