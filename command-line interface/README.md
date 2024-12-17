@@ -43,3 +43,20 @@ This tool is available in both web and command-line interfaces. The Cas-OFFinder
   ```
   ./vcf-cas-offinder.py -h
   ```
+  ```
+  usage: vcf-cas-offinder.py [-h] -i INPUT -r REF_PATH -t QUERY_INPUT -d DEVICE_ID
+
+Identify potential off-target sites based on VCF files.
+
+options:
+  -h, --help            show this help message and exit
+  -i INPUT, --input INPUT
+                        Path to the input VCF (Phased and single sample) file
+  -r REF_PATH, --ref_path REF_PATH
+                        Path to the target organism reference genome
+  -t QUERY_INPUT, --query_input QUERY_INPUT
+                        target sequence in the target organism genome (input.txt file)
+  -d DEVICE_ID, --device_id DEVICE_ID
+                        device_id(s): C for CPU and G for GPU, G0 for GPU device id=0
+
+  ```
