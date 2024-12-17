@@ -20,15 +20,15 @@ This tool is available in both web and command-line interfaces. The Cas-OFFinder
   ```
    conda install -c bioconda vcflib=1.0.3 tabixpp=1.1.0
   ```
--Then, download the chromosome FASTA files for any target organism. You can find one using the links below or you can use any other sources: 
- - For Vertebrates
-   ```
-   https://ftp.ensembl.org/pub/
-   ```
- - For Plants
-   ```
-   https://ftp.ensemblgenomes.ebi.ac.uk/pub/plants/
-   ```
+- Then, download the chromosome FASTA files for any target organism. You can find one using the links below or you can use any other sources: 
+    - For Vertebrates
+      ```
+      https://ftp.ensembl.org/pub/
+      ```
+    - For Plants
+      ```
+      https://ftp.ensemblgenomes.ebi.ac.uk/pub/plants/
+      ```
 - Extract all FASTA files into a directory and index them within the same directory.
    ```
    samtools faidx ref.genome
