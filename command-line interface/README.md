@@ -38,7 +38,9 @@ This tool is available in both web and command-line interfaces. The Cas-OFFinder
   ```
   ./vcf-cas-offinder.py -i input_vcf_file_path -r reference_genome_path -t target_sequence_input_file_name -d device_id
   ```
-   G represents using GPU devices, while C stands for CPUs. If you have multiple GPU or CPU IDs, you can specify them as G0 for GPU device ID 0 and G1 for ID 1 to limit the number    of devices used.
+   - for device_id you can use G, C or A
+    - G represents using GPU devices, while C stands for CPUs. A represents accelerators. If you have multiple GPU or CPU IDs, you can specify them as G0 for GPU device ID 0 and 
+      G1 for ID 1 to limit the number of devices used. 
 - For a short help, try running ./vcf-cas-offinder.py -h
   ```
   ./vcf-cas-offinder.py -h
@@ -59,4 +61,25 @@ This tool is available in both web and command-line interfaces. The Cas-OFFinder
   -d DEVICE_ID, --device_id DEVICE_ID
                         device_id(s): C for CPU and G for GPU, G0 for GPU device id=0
 
+  ```
+- You should create an input.txt file in the same directory with vcf-cas-offinder.
+     -  An example of an input file:
+     ```
+      NNNNNNNNNNNNNNNNNNNNGG
+      GTGAAATCTAAGTGTAGAGNNN 2
+      TTGTGAAATCTAAGTGTAGNNN 2
+      CTTCACAATTATTCGCCCANNN 2
+      GGGCGAATAATTGTGAAGGNNN 2
+      CTTACAGAAACACCTGTTANNN 2
+      AGATTCAAGAATTGGTACGNNN 2
+      AACCTTCAGTTAGTCGCTANNN 2
+      CACCATAGCGACTAACTGANNN 2
+      AGCTCAGGAAGGCCCTCATNNN 2
+     ```
+    - The first line indicates the desired pattern including PAM site
+    - The remaining lines are the query sequences and maximum mismatch numbers, separated by spaces
+    - **The length of the desired pattern and the query sequences should be the same**!
+- Now you can run vcf-Cas-OFFinder as follows (using GPUs):
+  ```
+  ./vcf-cas-offinder.py -i /home/user/Documents/vcf_files/bgzipresultcm334.vcf.gz -r /home/user/genome/pepper_ref/GCA_000512255.2_ASM51225v2_genomic.fa -t input.txt -d G1
   ```
