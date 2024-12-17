@@ -8,7 +8,7 @@ This newly designed pipeline incorporates Single Nucleotide Polymorphisms (SNPs)
 This tool is available in both web and command-line interfaces. The Cas-OFFinder web tool is user-friendly, and the entire website has undergone a renovation, transitioning from the previous interface at CRISPR RGEN Tools (rgenome.net) to a new one based on cutting-edge web technologies such as SvelteKit, FastAPI, Celery, duckdb, and Redis to enhance the user experience.
 
 **Usage**
-1. Download requirements.txt and vcf-cas-offinder.py and Install all dependencies listed in the requirements.txt file using the command:
+- Download requirements.txt and vcf-cas-offinder.py and Install all dependencies listed in the requirements.txt file using the command:
    ```
    pip install —no-cache-dir -r requirements.txt
    ```
