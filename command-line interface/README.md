@@ -46,9 +46,9 @@ This tool is available in both web and command-line interfaces. The Cas-OFFinder
   ```
   usage: vcf-cas-offinder.py [-h] -i INPUT -r REF_PATH -t QUERY_INPUT -d DEVICE_ID
 
-Identify potential off-target sites based on VCF files.
+  Identify potential off-target sites based on VCF files.
 
-options:
+  options:
   -h, --help            show this help message and exit
   -i INPUT, --input INPUT
                         Path to the input VCF (Phased and single sample) file
