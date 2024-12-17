@@ -9,4 +9,6 @@ This tool is available in both web and command-line interfaces. The Cas-OFFinder
 
 **Usage**
 1. Download requirements.txt and vcf-cas-offinder.py and Install all dependencies listed in the requirements.txt file using the command:
+   ```
    pip install —no-cache-dir -r requirements.txt
+   ```
