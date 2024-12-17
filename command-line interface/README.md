@@ -120,4 +120,4 @@ GGGCGAATAATTGTGAAGGNNN	CVCM334_CM008456.1:1	150079113	GGGCGAATAAcTaTGAAGGTGG	-	2
 GGGCGAATAATTGTGAAGGNNN	CVCM334_CM008456.1:1	150073909	GGGCGAATAAcTaTGAAGGTGG	-	2
 GGGCGAATAATTGTGAAGGNNN	CVCM334_CM008456.1:1	150092205	GGGCaAATAATTaTGAAGGTGG	-	2
   ```
--  from the second column, 0 after colon represents allele 1, and 1 represents allele 2 for each chromosome. 
+-  from the second column, 0 after colon represents allele 1, and 1 represents allele 2 for each chromosome. In the example shown above CVCM334_CM008455, CVCM334_CM008456, etc are chromosomes identifiers found in the reference genome. 
