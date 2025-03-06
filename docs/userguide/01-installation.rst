@@ -4,8 +4,9 @@ Installation
 
 A step-by-step guide
 --------------------
+The user has three different options to use our tool
+- Use our website
+- Use our command line tool 
+- Use our source code and deploy it to a local server
 
-The easiest way to prepare a python environment for SSAM is using conda. Keeping python projects in isolated environments prevents dependency version conflicts or conflicts with your OS installation of python which usually depends on older versions incompatible with current scientific packages.
-
-Create your environment:
 
