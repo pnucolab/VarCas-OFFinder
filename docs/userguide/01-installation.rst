@@ -14,10 +14,8 @@ The tool provides users with four distinct methods of interaction:
 4. API: Integrate the tool's features programatically through  API for automated workflows and system integration
 
 
-How to Use the Web Interface
-----------------------------
-
-This intuitive platform operates directly within your web browser from anywhere at any time.
+1. How to Use the Web Interface
+-------------------------------
 
 To get started, simply navigate to https://crispr.pnucolab.com/ and begin exploring the platform's features. For new users, a Sample VCF file is provided, which can be easily downloaded by clicking on the link. This sample file serves as a great starting point for familiarizing yourself with the tool's capabilities.
 The platform's default settings include:
@@ -78,5 +76,22 @@ Common Error messages and Solutions
        off-target sites in the entire individual genome. 
 
 
+2. How to Use the Command-line Interface
+----------------------------------------
 
+Cas-OFFinder is a highly efficient and adaptable program built upon OpenCL that identifies potential off-target sites of CRISPR/Cas-derived RNA-guided endonucleases (RGENs).
+An OpenCL device is essential for optimal functionality.
 
+## Usage
+- Download requirements.txt and vcf-cas-offinder.py and Install all dependencies listed in the requirements.txt file using the command:
+   ```
+   pip install —no-cache-dir -r requirements.txt
+   ```
+- Download the Cas-OFFinder binary file and extract and save it in the same directory with vcf-cas-offinder.py
+  ```
+  https://github.com/snugel/cas-offinder/releases/tag/2.4.1
+  ```
+- To install the vcflib package using conda, execute the following command:
+  ```
+   conda install -c bioconda vcflib=1.0.3 tabixpp=1.1.0
+  ```
