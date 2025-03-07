@@ -92,7 +92,7 @@ Create your environment:
 
 
 
-Download requirements.txt and vcf-cas-offinder.py and install all dependencies listed in the requirements.txt file using the command:
+Download requirements.txt and vcf-cas-offinder.py from the command-line interface directory and install all dependencies using the command:
 
 
 .. code-block:: bash
@@ -100,7 +100,7 @@ Download requirements.txt and vcf-cas-offinder.py and install all dependencies l
   pip install —no-cache-dir -r requirements.txt
 
 
-Download the Cas-OFFinder binary file and extract and save it in the same directory with vcf-cas-offinder.py:
+Download the Cas-OFFinder binary file from https://github.com/snugel/cas-offinder/releases/tag/2.4.1 and extract and save it in the same directory with vcf-cas-offinder.py:
 
 
 .. code-block:: bash
@@ -116,4 +116,26 @@ install the vcflib package using conda, execute the following command:
   conda install -c bioconda vcflib=1.0.3 tabixpp=1.1.0
 
 
+Download the chromosome FASTA files for any target organism. You can find one using the links below, or you can use any other sources:
+
+    - For Vertebrates
+
+
+        .. code-block:: bash
+        
+           https://ftp.ensembl.org/pub/
+
+ 
+    - For Plants
+
+        .. code-block:: bash
+                
+                  https://ftp.ensemblgenomes.ebi.ac.uk/pub/plants/
+         
+
+Extract all FASTA files into a directory. Index the extracted reference genome within the same directory
+
+.. code-block:: bash
+        
+           samtools faidx ref.genome 
 
