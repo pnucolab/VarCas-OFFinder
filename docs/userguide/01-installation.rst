@@ -51,7 +51,7 @@ Index bgzip VCF File
 
     tabix -p vcf Sample.vcf.gz
 
-Filter a Few Chromosomes VCF data (Not Mandatory but better for faster execution)
+Filter a Few Chromosomes VCF data (Not Mandatory but better for faster processing time)
 
 
 .. code-block:: bash
