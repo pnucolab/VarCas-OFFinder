@@ -35,13 +35,13 @@ Our tool is designed to deliver a smooth user experience. If an issue arises, we
 Common Error messages and Solutions
 -----------------------------------
 
-1.  Your file is not phased VCF file.
-    - What It Means: This occurs when you upload not pahsed vcf file. 
-    - What to Do: Ensure your VCF file is phased. You can use GATK, Octopus, or other variant callers to prepare a phased VCF file. 
+1. Your file is not phased VCF file.
+    -  What It Means: This occurs when you upload not pahsed vcf file. 
+    -  What to Do: Ensure your VCF file is phased. You can use GATK, Octopus, or other variant callers to prepare a phased VCF file. 
 2. Your file is multi-sample vcf file.
-    - What It Means: This happens when you upload multiple sample VCF file.
-    - What to Do: Please make sure that your VCF file contains only a single sample. Our web tool accepts only phased single sample vcf file to identify on-target and potential 
-      off-target sites in the entire individual genome. 
+    -  What It Means: This happens when you upload multiple sample VCF file.
+    -  What to Do: Please make sure that your VCF file contains only a single sample. Our web tool accepts only phased single sample vcf file to identify on-target and potential 
+       off-target sites in the entire individual genome. 
 
 
 
