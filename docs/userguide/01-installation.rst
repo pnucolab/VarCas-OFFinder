@@ -34,20 +34,19 @@ For more customized analysis, users have the option to upload their own VCF file
 
      gunzip Sample.vcf.gz
 
+   # bgzip the VCF file
 .. code-block:: markdown
 
-    # bgzip the VCF file
      bgzip -c Sample.vcf > Sample.vcf.gz
 
+   # Index bgzip VCF file
 .. code-block:: markdown
 
-    # Index bgzip VCF file
      tabix -p vcf Sample.vcf.gz
 
-
+   # filter a few chromosome data
 .. code-block:: markdown
-
-    # filter a few chromosome data
+ 
      bcftools view -r chr6,chr10 Sample.vcf.gz -o Output.vcf.gz
 
 Make sure the above tools are installed on your machine. After all these steps, your VCF file is ready to be uploaded for processing. 
