@@ -13,9 +13,9 @@ The tool provides users with four distinct methods of interaction:
 3. Source Code Deployment: Download the source code and deploy the tool on a local server for complete control and customization
 4. API: Integrate the tool's features programatically through  API for automated workflows and system integration
 
-============================
+
 How to Use the Web Interface
-============================
+----------------------------
 
 This intuitive platform operates directly within your web browser from anywhere at any time.
 
@@ -23,10 +23,10 @@ To get started, simply navigate to https://crispr.pnucolab.com/ and begin explor
 
 For more customized analysis, users have the option to upload their own VCF file (Supported file formats: [e.g., .vcf, .vcf.gz (gzipped and bgzipped file)]) and select from a range of parameters to tailor the analysis to their specific needs. The platform's default settings include:
 
-Target Genome: Homo sapiens (GRCh38/hg38) - Human
-PAM Type: SpCas9 from Streptococcus pyogenes: 5'-NRG-3
-Query Sequence: CAGCAACTCCAGGGGGCCGC
-Mismatches: 3
+    - Target Genome: Homo sapiens (GRCh38/hg38) - Human
+    - PAM Type: SpCas9 from Streptococcus pyogenes: 5'-NRG-3
+    - Query Sequence: CAGCAACTCCAGGGGGCCGC
+    - Mismatches: 3
 These default settings provide a solid foundation for analysis, but the ability to customize parameters ensures that users can adapt the tool to their unique research requirements.
 Once the analysis is complete, the results will be ready. The users can download the results if they want. 
 
