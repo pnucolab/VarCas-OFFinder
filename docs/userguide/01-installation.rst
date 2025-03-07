@@ -79,7 +79,7 @@ Common Error messages and Solutions
 2. How to Use the Command-line Interface
 ----------------------------------------
 
-Cas-OFFinder is a highly efficient and adaptable program built upon OpenCL that identifies potential off-target sites of CRISPR/Cas-derived RNA-guided endonucleases (RGENs).
+Cas-OFFinder is built upon OpenCL to identify potential off-target sites of CRISPR/Cas-derived RNA-guided endonucleases (RGENs).
 An OpenCL device is essential for optimal functionality.
 
 
