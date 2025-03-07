@@ -38,27 +38,26 @@ Unzip if it is Zipped
     gunzip Sample.vcf.gz
 
 bgzip the VCF File
-==================
+------------------
 
 .. code-block:: bash
 
     bgzip -c Sample.vcf > Sample.vcf.gz
 
 Index bgzip VCF File
-====================
+--------------------
 
 .. code-block:: bash
 
     tabix -p vcf Sample.vcf.gz
 
 Filter a Few Chromosome Data
-============================
+----------------------------
 
 .. code-block:: bash
 
     bcftools view -r chr6,chr10 Sample.vcf.gz -o Output.vcf.gz
  
-     bcftools view -r chr6,chr10 Sample.vcf.gz -o Output.vcf.gz
 
 Make sure the above tools are installed on your machine. After all these steps, your VCF file is ready to be uploaded for processing. 
 
