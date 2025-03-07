@@ -150,6 +150,8 @@ Now, the new Cas-OFFinder pipeline can run with:
           ./vcf-cas-offinder.py -i input_vcf_file_path -r reference_genome_path -t target_sequence_input_file_name -d device_id 
 
 
+
+
    - For device_id you can use G, C or A
      -  G represents using GPU devices, while C stands for CPUs. A represents accelerators. If you have multiple GPU or CPU IDs, you can specify them as G0 for GPU device ID 0 
          and 
