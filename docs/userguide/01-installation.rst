@@ -17,7 +17,7 @@ The tool provides users with four distinct methods of interaction:
 1. How to Use the Web Interface
 -------------------------------
 
-To get started, simply navigate to https://crispr.pnucolab.com/ and begin exploring the platform's features. For new users, a Sample VCF file is provided, which can be easily downloaded by clicking on the link. This sample file serves as a great starting point for familiarizing yourself with the tool's capabilities.
+To get started, navigate to https://crispr.pnucolab.com/ and explore the platform's features. A Sample VCF file is provided for new users, which can be easily downloaded by clicking on the link. This sample file serves as a great starting point for familiarizing yourself with the tool's capabilities.
 The platform's default settings include:
 
     - Target Genome: Homo sapiens (GRCh38/hg38) - Human
@@ -100,7 +100,7 @@ Download requirements.txt and vcf-cas-offinder.py from the command-line interfac
   pip install —no-cache-dir -r requirements.txt
 
 
-Download the Cas-OFFinder binary file from https://github.com/snugel/cas-offinder/releases/tag/2.4.1 and extract and save it in the same directory with vcf-cas-offinder.py:
+Download the Cas-OFFinder binary file from https://github.com/pnucolab/variant-aware-Cas-OFFinder/blob/main/backend/cas-offinder in the same directory with vcf-cas-offinder.py:
 
 
 .. code-block:: bash
@@ -198,7 +198,7 @@ You should create an input.txt file in the same directory with vcf-cas-offinder.
       CACCATAGCGACTAACTGANNN 2
       AGCTCAGGAAGGCCCTCATNNN 2
 
-- The first line indicates the desired pattern including PAM site.
+- The first line indicates the desired pattern, including the PAM site.
 - The remaining lines are the query sequences and maximum mismatch numbers, separated by spaces.
 - The length of the desired pattern and the query sequences should be the same.
 
@@ -223,3 +223,34 @@ Sample results are shown below.
 
 
 - 0 after the colon in the second column represents allele 1, and 1 represents allele 2 for each chromosome. In the example shown above, CVCM334_CM008455, CVCM334_CM008456, etc, are chromosome identifiers found in the allelic fasta files. 
+
+
+
+3. How to deploy Source Code on local machines
+----------------------------------------------
+
+
+If the user wants to deploy on local machines, follow the following steps.
+
+1. Create a directory
+2. Download frontend, backend, Caddyfile, and docker-compose.yml source codes to the directory
+3. Download Cas-offinder from https://github.com/pnucolab/variant-aware-Cas-OFFinder/blob/main/backend/cas-offinder
+4. Run the following command to build from the docker-compose file:
+
+
+.. code-block:: bash
+        
+           docker compose build
+
+
+5. After building, run the following command to start the services
+
+
+.. code-block:: bash
+        
+           docker compose up -d
+
+
+
+
+
