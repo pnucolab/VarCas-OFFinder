@@ -20,13 +20,18 @@ How to Use the Web Interface
 This intuitive platform operates directly within your web browser from anywhere at any time.
 
 To get started, simply navigate to https://crispr.pnucolab.com/ and begin exploring the platform's features. For new users, a Sample VCF file is provided, which can be easily downloaded by clicking on the link. This sample file serves as a great starting point for familiarizing yourself with the tool's capabilities.
-
-For more customized analysis, users have the option to upload their own VCF file (Supported file formats: [e.g., .vcf, .vcf.gz (gzipped and bgzipped file)]) and select from a range of parameters to tailor the analysis to their specific needs. The platform's default settings include:
+The platform's default settings include:
 
     - Target Genome: Homo sapiens (GRCh38/hg38) - Human
     - PAM Type: SpCas9 from Streptococcus pyogenes: 5'-NRG-3
     - Query Sequence: CAGCAACTCCAGGGGGCCGC
     - Mismatches: 3
+After downloading the sample VCF file, the user can click "Submit" to process it with the default parameters and wait until the result is available. 
+For more customized analysis, users have the option to upload their own VCF file (Supported file formats: [e.g., .vcf, .vcf.gz (gzipped and bgzipped file)]) and select from a range of parameters to tailor the analysis to their specific needs. For faster execution, upload a VCF file that contains limited chromosomes, like 2 or 3. See the steps below.
+
+:markdown:`# This is a Markdown header`
+
+
 These default settings provide a solid foundation for analysis, but the ability to customize parameters ensures that users can adapt the tool to their unique research requirements.
 Once the analysis is complete, the results will be ready. The users can download the results if they want. 
 
