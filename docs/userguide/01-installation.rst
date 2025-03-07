@@ -25,7 +25,7 @@ The platform's default settings include:
     - Query Sequence: CAGCAACTCCAGGGGGCCGC
     - Mismatches: 3
 After downloading the sample VCF file, the user can click "Submit" to process it with the default parameters and wait until the result is available. 
-For more customized analysis, users have the option to upload their own VCF file (Supported file formats: [e.g., .vcf, .vcf.gz (gzipped and bgzipped file)]) and select from a range of parameters to tailor the analysis to their specific needs. For faster execution, upload a VCF file that contains limited chromosomes, like 2 or 3. See the steps below.
+For more customized analysis, users have the option to upload their own VCF file (Supported file formats: [e.g., .vcf, .vcf.gz (gzipped and bgzipped file)]) and select from a range of parameters to tailor the analysis to their specific needs. For faster execution, upload a VCF file that contains a limited number of chromosomes, like 2 or 3. The User can follow the steps below to select a few chromosomes from a VCF file.
 
   
 Unzip if it is zipped:
