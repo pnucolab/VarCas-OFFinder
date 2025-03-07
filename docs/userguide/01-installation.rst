@@ -137,5 +137,22 @@ Extract all FASTA files into a directory. Index the extracted reference genome w
 
 .. code-block:: bash
         
-           samtools faidx ref.genome 
+           samtools faidx ref.genome # replace ref.genome with tha actual name of the extracted reference genome 
 
+
+Ensure that the “+x” flag is added to the input_vcf_file and the target organism’s reference genome directory.
+
+Now, the new Cas-OFFinder pipeline can run with:
+
+
+.. code-block:: bash
+        
+          ./vcf-cas-offinder.py -i input_vcf_file_path -r reference_genome_path -t target_sequence_input_file_name -d device_id 
+
+
+   - For device_id you can use G, C or A
+     -  G represents using GPU devices, while C stands for CPUs. A represents accelerators. If you have multiple GPU or CPU IDs, you can specify them as G0 for GPU device ID 0 
+         and 
+
+      G1 for ID 1 to limit the number of devices used. 
+    - For a short help, try running ./vcf-cas-offinder.py -h
