@@ -178,3 +178,27 @@ For a short help, try running
                         target sequence in the target organism genome (input.txt file)
   -d DEVICE_ID, --device_id DEVICE_ID
                         device_id(s): C for CPU and G for GPU, G0 for GPU device id=0
+
+
+You should create an input.txt file in the same directory with vcf-cas-offinder. 
+
+ An example of an input file:
+
+
+.. code-block:: bash
+        
+      NNNNNNNNNNNNNNNNNNNNGG
+      GTGAAATCTAAGTGTAGAGNNN 2
+      TTGTGAAATCTAAGTGTAGNNN 2
+      CTTCACAATTATTCGCCCANNN 2
+      GGGCGAATAATTGTGAAGGNNN 2
+      CTTACAGAAACACCTGTTANNN 2
+      AGATTCAAGAATTGGTACGNNN 2
+      AACCTTCAGTTAGTCGCTANNN 2
+      CACCATAGCGACTAACTGANNN 2
+      AGCTCAGGAAGGCCCTCATNNN 2
+
+- The first line indicates the desired pattern including PAM site.
+- The remaining lines are the query sequences and maximum mismatch numbers, separated by spaces.
+- The length of the desired pattern and the query sequences should be the same.
+
