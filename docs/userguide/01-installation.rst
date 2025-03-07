@@ -214,7 +214,7 @@ Now you can run vcf-Cas-OFFinder as follows (using GPUs):
 
 Sample results are shown below.
 
-.. image:: "C:\Users\abyot\OneDrive\Pictures\Screenshots\Screenshot 2025-03-07 231028.png"
+.. image:: C:\Users\abyot\OneDrive\Pictures\Screenshots\Screenshot 2025-03-07 231028.png
    :alt: Example Image
    :width: 400px
    :align: center
