@@ -82,7 +82,13 @@ Common Error messages and Solutions
 Cas-OFFinder is a highly efficient and adaptable program built upon OpenCL that identifies potential off-target sites of CRISPR/Cas-derived RNA-guided endonucleases (RGENs).
 An OpenCL device is essential for optimal functionality.
 
-## Usage
+Create your environment:
+
+.. code-block:: bash
+
+conda create -n crispr
+
+
 - Download requirements.txt and vcf-cas-offinder.py and Install all dependencies listed in the requirements.txt file using the command:
    ```
    pip install —no-cache-dir -r requirements.txt
