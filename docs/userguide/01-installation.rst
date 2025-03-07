@@ -90,15 +90,30 @@ Create your environment:
 
    conda create -n crispr
 
-- Download requirements.txt and vcf-cas-offinder.py and Install all dependencies listed in the requirements.txt file using the command:
-   ```
-   pip install —no-cache-dir -r requirements.txt
-   ```
-- Download the Cas-OFFinder binary file and extract and save it in the same directory with vcf-cas-offinder.py
-  ```
+
+
+Download requirements.txt and vcf-cas-offinder.py and install all dependencies listed in the requirements.txt file using the command:
+
+
+.. code-block:: bash
+
+  pip install —no-cache-dir -r requirements.txt
+
+
+Download the Cas-OFFinder binary file and extract and save it in the same directory with vcf-cas-offinder.py:
+
+
+.. code-block:: bash
+
   https://github.com/snugel/cas-offinder/releases/tag/2.4.1
-  ```
-- To install the vcflib package using conda, execute the following command:
-  ```
-   conda install -c bioconda vcflib=1.0.3 tabixpp=1.1.0
-  ```
+  
+
+install the vcflib package using conda, execute the following command:
+
+
+.. code-block:: bash
+
+  conda install -c bioconda vcflib=1.0.3 tabixpp=1.1.0
+
+
+
