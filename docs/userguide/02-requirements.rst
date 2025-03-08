@@ -19,6 +19,7 @@ Required Tools for CLI and Local Deployment
 For users who prefer to work via the command-line interface or deploy Allelic-Cas-OFFinder locally, the following tools are required:
 
 - bcftools: a utility for manipulating and filtering VCF files.
+
   - install bcftools via conda:
    
 
