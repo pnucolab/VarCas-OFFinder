@@ -57,4 +57,4 @@ If your VCF file is in .vcf or .vcf.gz (compressed with standard gzip) format bu
               tabix -p vcf Sample.vcf.gz
 
 
-- Now your file is ready to be uploaded or used in CLI. 
+Now, your file is ready to be uploaded or used in CLI. 
