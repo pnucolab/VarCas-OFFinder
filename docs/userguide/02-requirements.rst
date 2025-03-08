@@ -23,6 +23,7 @@ For users who prefer to work via the command-line interface or deploy Allelic-Ca
   - install bcftools via conda:
    
 
+
     .. code-block:: bash
     
     conda install -c bioconda bcftools
