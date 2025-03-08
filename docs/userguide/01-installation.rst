@@ -17,6 +17,18 @@ The tool provides users with four distinct methods of interaction:
 1. How to Use the Web Interface
 -------------------------------
 
+To use the Allelic-Cas-OFFinder web tool, your system must meet the following requirements for operating systems and web browsers.
+- Supported Operating Systems:
+        - Windows
+        - macOS
+        - Linux
+- Supported web browsers:
+        - Google Chrome
+        - Mozilla Firefox
+        - Microsoft Edge
+        - Safari
+
+
 To get started, navigate to https://crispr.pnucolab.com/ and explore the platform's features. A Sample VCF file is provided for new users, which can be easily downloaded by clicking on the link. This sample file serves as a great starting point for familiarizing yourself with the tool's capabilities.
 The platform's default settings include:
 
@@ -102,10 +114,6 @@ Download requirements.txt and vcf-cas-offinder.py from the command-line interfac
 
 Download the Cas-OFFinder binary file from https://github.com/pnucolab/variant-aware-Cas-OFFinder/blob/main/backend/cas-offinder in the same directory with vcf-cas-offinder.py:
 
-
-.. code-block:: bash
-
-  https://github.com/snugel/cas-offinder/releases/tag/2.4.1
   
 
 install the vcflib package using conda, execute the following command:
