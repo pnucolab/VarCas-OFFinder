@@ -37,7 +37,7 @@ The platform's default settings include:
     - PAM Type: SpCas9 from Streptococcus pyogenes: 5'-NRG-3
     - Query Sequence: CAGCAACTCCAGGGGGCCGC
     - Mismatches: 3
-After downloading the sample VCF file, the user can click "Submit" to process it with the default parameters and wait until the result is available. 
+After downloading the sample VCF file, click "Submit" to process it with the default parameters and wait until the result is available. 
 For more customized analysis, users have the option to upload their own VCF file (Supported file formats: [e.g., .vcf, .vcf.gz (gzipped and bgzipped file)]) and select from a range of parameters to tailor the analysis to their specific needs. For faster execution, upload a VCF file that contains a limited number of chromosomes, like 2 or 3. The User can follow the steps below to select a few chromosomes from a VCF file.
 
   
