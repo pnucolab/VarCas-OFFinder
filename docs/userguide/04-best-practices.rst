@@ -22,7 +22,7 @@ Use bcftools to extract data for specific chromosomes:
     bcftools view -r chr6,chr10 NA12877.vcf.gz -o Filtered_Sample.vcf.gz
 
 
-  - Upload the filtered file (Filtered_Sample.vcf.gz) instead of the original, which can significantly decrease processing time.
+Upload the filtered file (Filtered_Sample.vcf.gz) instead of the original, which can significantly decrease processing time.
 
 
 2. Use bgzip for Compression to Enhance Performance
