@@ -31,11 +31,11 @@ If your VCF file is in .vcf or .vcf.gz (compressed with standard gzip) format bu
 
   - If the file is .vcf (uncompressed), compress it with bgzip:
 
-    .. code-block:: bash
+      .. code-block:: bash
     
-       bgzip -c Sample.vcf > Sample.vcf.gz
+          bgzip -c Sample.vcf > Sample.vcf.gz
 
- - Index the bgzip-compressed file for faster access
+  - Index the bgzip-compressed file for faster access
 
 
       .. code-block:: bash
