@@ -17,7 +17,44 @@ Example:
 Use bcftools to extract data for specific chromosomes:
 
 
-  :  code-block:: bash
+  .. code-block:: bash
     
     bcftools view -r chr6,chr10 NA12877.vcf.gz -o Filtered_Sample.vcf.gz
 
+
+  - Upload the filtered file (Filtered_Sample.vcf.gz) instead of the original, which can significantly decrease processing time.
+
+
+2. Use bgzip for Compression to Enhance Performance
+
+If your VCF file is in .vcf or .vcf.gz (compressed with standard gzip) format but not compressed using bgzip, you can compress it with bgzip before uploading it.
+
+  - If the file is .vcf (uncompressed):
+
+    .. code-block:: bash
+    
+       bgzip -c Sample.vcf > Sample.vcf.gz
+
+
+  - If the file is compressed with gzip (.vcf.gz but not bgzip)
+
+      - Decompress it:
+
+         .. code-block:: bash
+  
+            gunzip Sample.vcf.gz
+
+
+      - And then compress it with bgzip
+
+
+            .. code-block:: bash
+                bgzip -c Sample.vcf > Sample.vcf.gz
+
+  - Index the bgzip-compressed file for faster access
+
+          .. code-block:: bash
+              tabix -p vcf Sample.vcf.gz
+
+
+- Now your file is ready to be uploaded or used in CLI. 
