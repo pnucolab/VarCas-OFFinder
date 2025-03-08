@@ -6,7 +6,7 @@ Best Practices
 Best Practices for Optimizing Performance with Large VCF Files
 --------------------------------------------------------------
 
-When working with large VCF files, it is recommended to follow these best practices to minimize processing time. 
+When working with large VCF files, it is **recommended (but not mandatory)** to follow these best practices to minimize processing time. 
 
 1. Filter Chromosomes for Targeted Processing
 
@@ -29,7 +29,7 @@ Upload the filtered file (Filtered_Sample.vcf.gz) instead of the original, which
 
 If your VCF file is in .vcf or .vcf.gz (compressed with standard gzip) format but not compressed using bgzip, you can compress it with bgzip before uploading it.
 
-  - If the file is .vcf (uncompressed):
+  - If the file is .vcf (uncompressed), compress it with bgzip:
 
     .. code-block:: bash
     
@@ -38,7 +38,7 @@ If your VCF file is in .vcf or .vcf.gz (compressed with standard gzip) format bu
 
   - If the file is compressed with gzip (.vcf.gz but not bgzip)
 
-      - Decompress it:
+      - Decompress it first:
 
          .. code-block:: bash
   
