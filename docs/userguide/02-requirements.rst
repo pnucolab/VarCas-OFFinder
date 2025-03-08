@@ -18,6 +18,14 @@ Required Tools for CLI and Local Deployment
   
 For users who prefer to work via the command-line interface or deploy Allelic-Cas-OFFinder locally, the following tools are required:
 
+- Create a conda environment
+
+
+.. code-block:: bash
+    
+       conda create -n cas-offinder
+
+
 - bcftools: a utility for manipulating and filtering VCF files.
 
   - install bcftools via conda:
@@ -27,3 +35,31 @@ For users who prefer to work via the command-line interface or deploy Allelic-Ca
     .. code-block:: bash
     
        conda install -c bioconda bcftools
+
+  bcftools can be used to filter specific chromosomes.
+
+
+    .. code-block:: bash
+    
+        bcftools view -r chr6,chr10 Sample.vcf.gz -o Output.vcf.gz
+
+
+- tabix: A tool for indexing VCF files. It is used for fast random access to VCF files.
+
+
+    .. code-block:: bash
+    
+        conda install -c bioconda tabix
+
+
+  - To index a VCF file
+
+
+     .. code-block:: bash
+        
+            tabix -p vcf Sample.vcf.gz
+
+
+
+
+
