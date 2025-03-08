@@ -21,9 +21,9 @@ For users who prefer to work via the command-line interface or deploy Allelic-Ca
 - Create a conda environment
 
 
-.. code-block:: bash
-    
-       conda create -n cas-offinder
+  .. code-block:: bash
+      
+         conda create -n cas-offinder
 
 
 - bcftools: a utility for manipulating and filtering VCF files.
