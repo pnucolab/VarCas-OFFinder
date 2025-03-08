@@ -35,6 +35,12 @@ If your VCF file is in .vcf or .vcf.gz (compressed with standard gzip) format bu
     
        bgzip -c Sample.vcf > Sample.vcf.gz
 
+   - Index the bgzip-compressed file for faster access
+
+
+      .. code-block:: bash
+
+          tabix -p vcf Sample.vcf.gz
 
   - If the file is compressed with gzip (.vcf.gz but not bgzip)
 
