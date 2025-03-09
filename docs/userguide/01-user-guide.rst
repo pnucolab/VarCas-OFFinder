@@ -246,9 +246,9 @@ If the user wants to deploy on local machines, please follow the following steps
 3. Download Cas-offinder from https://github.com/pnucolab/variant-aware-Cas-OFFinder/blob/main/backend/cas-offinder and make it executable:
 
 
-        .. code-block:: bash
+  .. code-block:: bash
         
-            chmod +x cas-offinder 
+          chmod +x cas-offinder 
 
 4. Run the following command to build from the docker-compose file:
 
