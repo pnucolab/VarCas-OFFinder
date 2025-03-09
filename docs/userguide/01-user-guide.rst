@@ -239,11 +239,17 @@ Sample results are shown below.
 ----------------------------------------------
 
 
-If the user wants to deploy on local machines, follow the following steps.
+If the user wants to deploy on local machines, please follow the following steps.
 
 1. Create a directory
 2. Download frontend, backend, Caddyfile, and docker-compose.yml source codes to the directory
-3. Download Cas-offinder from https://github.com/pnucolab/variant-aware-Cas-OFFinder/blob/main/backend/cas-offinder
+3. Download Cas-offinder from https://github.com/pnucolab/variant-aware-Cas-OFFinder/blob/main/backend/cas-offinder and make it executable:
+
+
+        .. code-block:: bash
+        
+            chmod +x cas-offinder 
+
 4. Run the following command to build from the docker-compose file:
 
 
