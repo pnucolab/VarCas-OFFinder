@@ -253,7 +253,7 @@ If the user wants to deploy on local machines, please follow the following steps
 4. Run the following command to build from the docker-compose file:
 
 
-.. code-block:: bash
+   .. code-block:: bash
         
            docker compose build
 
@@ -261,7 +261,7 @@ If the user wants to deploy on local machines, please follow the following steps
 5. After building, run the following command to start the services
 
 
-.. code-block:: bash
+   .. code-block:: bash
         
            docker compose up -d
 
