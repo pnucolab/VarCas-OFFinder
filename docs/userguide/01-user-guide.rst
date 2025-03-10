@@ -67,7 +67,7 @@ Filter a Few Chromosomes VCF data (Not Mandatory but better for faster processin
 
 .. code-block:: bash
 
-    bcftools view -r chr6,chr10 Sample.vcf.gz -o Output.vcf.gz
+    bcftools view -r chr6,chr10 NA12878.vcf.gz -o Output.vcf.gz
  
 
 Make sure the above tools are installed on your machine. After all these steps, your VCF file is ready to be uploaded for processing. 
