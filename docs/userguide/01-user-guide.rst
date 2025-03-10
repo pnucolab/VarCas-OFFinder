@@ -17,7 +17,7 @@ The tool provides users with four distinct methods of interaction:
 1. How to Use the Web Interface
 -------------------------------
 
-To use the Allelic-Cas-OFFinder web tool, your system must meet the following requirements for operating systems and web browsers.
+Allelic-Cas-OFFinder web tool works well in the following operating systems and web browsers.
 
 - Supported Operating Systems:
         - Windows
